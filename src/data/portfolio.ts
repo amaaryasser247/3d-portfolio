@@ -65,8 +65,8 @@ export const profile: Profile = {
   email: 'amaaryasser88@gmail.com',
   location: 'Egypt',
   portrait: {
-    src: '/images/me-cartoon.webp',
-    fallbackSrc: '/images/me-cartoon.png',
+    src: 'images/me-cartoon.webp',
+    fallbackSrc: 'images/me-cartoon.png',
     alt: 'Cartoon portrait of Amaar Yasser',
   },
 };
@@ -148,7 +148,7 @@ const MOTION_SITES_GIFS = [
 const pad = (value: number) => String(value).padStart(2, '0');
 
 export const marqueeImages: ImageAsset[] = MOTION_SITES_GIFS.map((file, i) => ({
-  src: `/images/marquee/${pad(i + 1)}.webp`,
+  src: `images/marquee/${pad(i + 1)}.webp`,
   fallbackSrc: `https://motionsites.ai/assets/${file}`,
   alt: `Website animation preview ${pad(i + 1)}`,
 }));
@@ -160,22 +160,22 @@ const FIGMA_DECORATIONS =
 
 export const aboutDecorations: ImageAsset[] = [
   {
-    src: '/images/about/moon.png',
+    src: 'images/about/moon.png',
     fallbackSrc: `${FIGMA_DECORATIONS}/moon_icon.11395d36.png`,
     alt: 'Decorative 3D moon icon',
   },
   {
-    src: '/images/about/object.png',
+    src: 'images/about/object.png',
     fallbackSrc: `${FIGMA_DECORATIONS}/p59_1.4659672e.png`,
     alt: 'Decorative abstract object',
   },
   {
-    src: '/images/about/lego.png',
+    src: 'images/about/lego.png',
     fallbackSrc: `${FIGMA_DECORATIONS}/lego_icon-1.703bb594.png`,
     alt: 'Decorative 3D lego icon',
   },
   {
-    src: '/images/about/group.png',
+    src: 'images/about/group.png',
     fallbackSrc: `${FIGMA_DECORATIONS}/Group_134-1.2e04f3ce.png`,
     alt: 'Decorative 3D shape group',
   },
@@ -187,7 +187,7 @@ const projectImages = (
   prefix: string,
   alts: [string, string, string],
 ): Project['images'] => {
-  const shot = (position: number) => `/images/projects/${prefix}-${position}.jpg`;
+  const shot = (position: number) => `images/projects/${prefix}-${position}.jpg`;
   return [
     { src: shot(1), fallbackSrc: shot(2), alt: alts[0] },
     { src: shot(2), fallbackSrc: shot(3), alt: alts[1] },
