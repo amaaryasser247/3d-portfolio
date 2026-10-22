@@ -2,6 +2,16 @@
 
 Dark, animated single-page portfolio built with Vite, React 18, TypeScript (strict), Tailwind CSS 3, Framer Motion and Lucide React. The Kanit font (Google Fonts, weights 300–900) drives the display typography; the page background is `#0C0C0C`.
 
+## Live demo
+
+**https://amaaryasser247.github.io/3d-portfolio/**
+
+Repo: **https://github.com/amaaryasser247/3d-portfolio**
+
+Every push to `main` is built and deployed automatically to GitHub Pages by
+`.github/workflows/deploy.yml`. The Vite build uses a relative base, so the same
+bundle works at the Pages subpath and on a root domain.
+
 ## Getting started
 
 ```bash
@@ -57,8 +67,11 @@ remote spec asset elsewhere). Replace the files, keep the names — or update
 
 ## Contact links
 
-Email (`amaaryasser88@gmail.com`), GitHub, LinkedIn and WhatsApp are all wired
-through `profile.email` and `socials`. Update them there if anything changes.
+The **Contact Me** button opens Gmail compose pre-filled with
+`amaaryasser88@gmail.com` — it works in the browser even when no desktop mail
+app is configured. The Email icon uses a standard `mailto:` link so visitors
+with a mail client can use it. Email, GitHub, LinkedIn and WhatsApp are wired
+through `profile.email` and `socials`; update them there if anything changes.
 
 ## Updating the visual year
 
