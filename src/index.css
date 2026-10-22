@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  background-color: #0c0c0c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@layer components {
+  /* Massive gradient headline used by the hero and section headings */
+  .hero-heading {
+    background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+/* Sticky project cards: base offset top-24 (6rem), md:top-32 (8rem),
+   plus a per-card 28px stack offset injected via --card-offset. */
+.project-sticky {
+  top: calc(6rem + var(--card-offset, 0px));
+}
+
+@media (min-width: 768px) {
+  .project-sticky {
+    top: calc(8rem + var(--card-offset, 0px));
+  }
+}
